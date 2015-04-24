@@ -1,0 +1,23 @@
+<?php
+	include('smarty/Smarty.class.php');
+	$theme = new Smarty;	
+	if($_SERVER["HTTP_HOST"] == "localhost" || $_SERVER["HTTP_HOST"] == "127.0.0.1")
+	{
+		define("SITE_URL","http://".$_SERVER["HTTP_HOST"]."/gi-constructions/");//"http://".$_SERVER["HTTP_HOST"]."/");
+	}
+	else
+	{
+		define("SITE_URL","http://".$_SERVER["HTTP_HOST"]."/");//"http://".$_SERVER["HTTP_HOST"]."/");
+	}
+	//echo '<pre>';print_r($_SERVER);die;
+	if($_SERVER['HTTP_HOST']=="localhost")
+	{
+		$SERVER['is_developer'] = 1;
+	}
+	elseif($_SERVER['HTTP_HOST']=="www.girishconstructions.com")
+	{
+		$SERVER['is_developer'] = 0;
+	}
+	$theme->assign('SERVER',$SERVER);
+	$theme->assign('SITE_URL',SITE_URL);
+?>
