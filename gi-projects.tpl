@@ -46,44 +46,32 @@
 		</div>
 	</div>
 	<div class="col-md-12 mt-xl" id="section_project3">
-		<h3>Tulsiani Square</h3>
+		<h3>Ambition City Lucknow</h3>
 		<div class="col-md-4">
 			<ul>
-				<li>Power Backup 24x7</li>
-				<li>Grond Level Parking</li>
-				<li>24x7 Security</li>
-				<li>Centralized Floor Parking</li>
-				<li>Imported Marble/Imported Laminated wooden flooring</li>
-				<li>Pressurized water supply system</li>
-				<li>High level single level bathroom fittings</li>
+				<li>24x7 Power Backup</li>
+				<li>24x7 Water Supply</li>
+				<li>Entrance gate with 24x7 security</li>
+				<li>Swimming pool and pool club</li>
+				<li>Interval paved concrete roads</li>
+				<li>Community center and party lawn</li>
+				<li>Yoga and meditation center</li>
+				<li>Jogging track</li>
+				<li>Children's park and water park</li>
+				<li>Indoor and outdoor games</li>
+				<li>Mini stadium</li>
+				<li>Street lighting</li>
 			</ul>
+			<h4>Watch promotional video of this project</h4>
+			<div class="mb-xl"><a target="_blank" href="https://www.youtube.com/watch?v=DEJY0LLG7fQ">Click here to watch video on youtube.</a></div>
 		</div>
 		<div class="col-md-4 center mt-xl mb-xl">
 			<button type="button" class="btn btn-danger btn-lg common-modal" modal-name="I would like to buy an apartment">Buy Now</button>
 		</div>
 		<div class="col-md-4 npr mb-xl">
-			<a href="#" data-toggle="modal" data-target="#"><img src="{$SITE_URL}images/tulsiani/2.png" class="img-responsive fixed_dimension"></a>	
+			<a href="#" data-toggle="modal" data-target="#"><img src="{$SITE_URL}images/ambition/1.jpg" class="img-responsive fixed_dimension"></a>	
 		</div>
 	</div>
-	<!--<div class="col-md-12 mt-xl" id="section_project4">
-		<h3>Available plots in the city</h3>
-		<ul>
-			<li>Residencial plots at bairahana
-				<ul>
-					<li>Distance from New Bridge Allahabad - 0.5 Km</li>
-					<li>Distance from Bai Ka Bagh(Bus stand) - 1 Km</li>
-					<li>Distance from Main road - 50 Meters</li>
-					<li>Area of plots - According to customers demand</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<div class="col-md-12 mt-xl" id="section_project5">
-		<h3>Upcoming Projects</h3>
-		<ul>
-			<li>Shine City Project at Karchana</li>
-		</ul>
-	</div>-->
 	<div class="col-md-12 mt-xl">
 		<h3>Other Projects</h3>
 		<div class="col-md-8">

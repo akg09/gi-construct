@@ -9,7 +9,6 @@
 	$data['curl'] = 1;
 	
 	$data = getUserRequest_without_decode($data);
-
 	$func = $action = "";
 	if(isset($data['action']) && $data['action'] <> "")
 	{
@@ -30,9 +29,7 @@
 		exit;
 	}
 	$theme->assign('data',$data);
-	
-	echo $theme->fetch("gi-header.tpl");//echo "hi";
-	//print_r($data);die;	
+	echo $theme->fetch("gi-header.tpl");
 	if($data['func'] == "home" && !$action)
 	{
 		echo $theme->fetch("main-page.tpl");

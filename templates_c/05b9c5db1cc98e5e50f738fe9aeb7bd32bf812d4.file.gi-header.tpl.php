@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-02-15 16:17:37
+<?php /* Smarty version Smarty-3.1.19, created on 2015-05-06 19:42:44
          compiled from "gi-header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3569714154bc95ff82f041-55344154%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22235554a67b3308ce3-24284009%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '4fa6ad1debfd4f2cc343349b06f025948cfb8bec' => 
+    '05b9c5db1cc98e5e50f738fe9aeb7bd32bf812d4' => 
     array (
       0 => 'gi-header.tpl',
-      1 => 1424017050,
+      1 => 1430941272,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3569714154bc95ff82f041-55344154',
+  'nocache_hash' => '22235554a67b3308ce3-24284009',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_54bc95ff885c87_10795668',
+  'unifunc' => 'content_554a67b3612334_47590088',
   'variables' => 
   array (
     'SITE_URL' => 0,
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54bc95ff885c87_10795668')) {function content_54bc95ff885c87_10795668($_smarty_tpl) {?><html>
+<?php if ($_valid && !is_callable('content_554a67b3612334_47590088')) {function content_554a67b3612334_47590088($_smarty_tpl) {?><html>
 	<head>
 		<title>Girish Constructions</title>
 		<meta charset="utf-8">
