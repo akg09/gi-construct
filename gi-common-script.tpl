@@ -10,5 +10,13 @@ $(document).ready(function(){
 			activate(0);
 		});
 	});
+	$('#show_modal_login').click(function(){
+		activate(1);
+		$.post("{$SITE_URL}index.php?func=login_modal&ajax=1",function(data){
+			$('body').append(data);
+			$('#login_modal').modal('show');
+			activate(0);
+		});
+	});
 });
 </script>

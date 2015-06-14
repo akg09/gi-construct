@@ -31,7 +31,7 @@ function checkFrmElements(frmElemenets, len)
 	{
 		var ele = frmArr[i];
 		var frmele = $('[name="'+ele+'"]').length?$('[name="'+ele+'"]'):$('[id="+ele+"]');
-		var input_head = $(frmele).closest('.'+ele+'-group');
+		var input_head = $('.'+ele+'-group');
 		
 		if(frmele.val().length<len || ((ele.indexOf('email')>=0) && !validate_email($(frmele).val())))
 		{

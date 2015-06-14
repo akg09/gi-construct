@@ -1,30 +1,30 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-05-06 19:12:51
+<?php /* Smarty version Smarty-3.1.19, created on 2015-06-14 09:52:54
          compiled from "gi-header-top.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:29777554a67b379d003-56658754%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13223557c83a64a2d55-84363299%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '078b9f173470e3bd5f964d26d99cd0c1b7bddb7b' => 
     array (
       0 => 'gi-header-top.tpl',
-      1 => 1421252322,
+      1 => 1434275522,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '29777554a67b379d003-56658754',
+  'nocache_hash' => '13223557c83a64a2d55-84363299',
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_557c83a6574265_14472826',
   'variables' => 
   array (
     'SITE_URL' => 0,
     'data' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_554a67b38ff6c1_28752458',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_554a67b38ff6c1_28752458')) {function content_554a67b38ff6c1_28752458($_smarty_tpl) {?><!--File Name:gi-header-top.tpl-->
+<?php if ($_valid && !is_callable('content_557c83a6574265_14472826')) {function content_557c83a6574265_14472826($_smarty_tpl) {?><!--File Name:gi-header-top.tpl-->
 <div class="row">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
@@ -52,14 +52,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ?func=about_us<?php }?>">About Us</a></li>
 					<li <?php if ($_smarty_tpl->tpl_vars['data']->value['func']=="support") {?>class="active"<?php }?>><a href="<?php if ($_smarty_tpl->tpl_vars['data']->value['func']=="support") {?>#<?php } else { ?><?php echo $_smarty_tpl->tpl_vars['SITE_URL']->value;?>
 ?func=support<?php }?>">Contact Us</a></li>
-					<!--<li <?php if ($_smarty_tpl->tpl_vars['data']->value['func']=="contact") {?>class="active"<?php }?>><a href="<?php if ($_smarty_tpl->tpl_vars['data']->value['func']=="contact") {?>#<?php } else { ?><?php echo $_smarty_tpl->tpl_vars['SITE_URL']->value;?>
-?func=contact<?php }?>">Contact</a></li>-->
 				</ul>
-				<ul class="nav navbar-nav navbar-right nmr social hidden-xs">
+				<ul class="nav navbar-nav navbar-right nmr social hidden-xs select_pages">
+					<li  class="active np mr-lg" id="show_modal_login" accesskey="l"><a href="#">Sign Up/Login</a></li>
 					<li><a href="https://plus.google.com/u/0/106213702050772196832/about" target="_blank" class="google"></a><li>
 					<li><a target="_blank" href="https://www.facebook.com/pages/Girish-Constructions-and-Property-Dealers/256269554568614?ref=hl" class="facebook"></a><li>
 					<li><a target="_blank" href="https://twitter.com/girishconstruct?lang=en" class="twitter"></a><li>
-					<!--<li><a target="_blank" href="" class="linkedin"></a><li>-->
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->

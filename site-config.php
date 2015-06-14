@@ -17,6 +17,11 @@
 	{
 		$SERVER['is_developer'] = 0;
 	}
+	include_once '/../gi-api/index.php';
 	$theme->assign('SERVER',$SERVER);
 	$theme->assign('SITE_URL',SITE_URL);
+	if(!isset($no_session) || $no_session==false)
+	{
+		//session_start();
+	}
 ?>

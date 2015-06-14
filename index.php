@@ -1,14 +1,7 @@
 <?php
 
-	$data['timer_not_allowed'] = 0;
-	$data['func'] = "home";
-	include_once 'site-config.php';
-	$data['formmethod'] 	= "POST";
-	include_once 'gi-header-functions.php';
+	include_once 'gi-header.php';
 	
-	$data['curl'] = 1;
-	
-	$data = getUserRequest_without_decode($data);
 	$func = $action = "";
 	if(isset($data['action']) && $data['action'] <> "")
 	{
@@ -26,6 +19,12 @@
 	{
 		$theme->assign('data',$data);
 		echo $theme->fetch('common-services-modal.tpl');
+		exit;
+	}
+	if($data['func'] == "login_modal" && $data['ajax'] == 1)
+	{
+		$theme->assign('data',$data);
+		echo $theme->fetch("gi-modal-login.tpl");
 		exit;
 	}
 	$theme->assign('data',$data);
