@@ -1,6 +1,7 @@
 <?php
 	include('smarty/Smarty.class.php');
 	$theme = new Smarty;	
+	
 	if($_SERVER["HTTP_HOST"] == "localhost" || $_SERVER["HTTP_HOST"] == "127.0.0.1")
 	{
 		define("SITE_URL","http://".$_SERVER["HTTP_HOST"]."/gi-construct/");//"http://".$_SERVER["HTTP_HOST"]."/");
@@ -22,6 +23,6 @@
 	$theme->assign('SITE_URL',SITE_URL);
 	if(!isset($no_session) || $no_session==false)
 	{
-		//session_start();
+		session_start();
 	}
 ?>

@@ -62,5 +62,12 @@
 	{
 		echo $theme->fetch("gi-contact.tpl");
 	}
+	if($data['func'] == "my_property")
+	{
+		$where = array();
+		$where['user_guid'] = $user['user_guid'];
+		//$property = getAPIDataJ("my_property_list",$where);
+		echo $theme->fetch("gi-my_property_list.tpl");
+	}
 	echo $theme->fetch("gi-footer.tpl");		
 ?>

@@ -28,7 +28,7 @@
 			{
 				$_SESSION['gi_user'] = $user = $new_user[0];
 				session_start();
-				
+				header('Location: http://localhost/gi-construct');	
 			}
 			else
 			{

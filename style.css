@@ -105,7 +105,7 @@ body
 .clearfix{float:none!important}
 .relative{position:relative}
 .h{display:none;}
-.select_pages li.active a
+.select_pages li.active a, .navbar-right>.dropdown>a
 {
 	background-color: #337ab7!important;
 	border-color: #2e6da4!important;
@@ -140,7 +140,7 @@ width:36px;
 background-image:url('images/icons/linkedin.png');
 background-repeat:no-repeat;
 }
-.social li{
+.social .social_options{
 padding-top: 6px;
 padding-right: 10px;
 }
@@ -254,3 +254,13 @@ span12{width:940px}
 .span2{width:140px}
 .span1{width:76px}
 .span0{width:40px}
+.greetings
+{
+	display:block;
+	line-height:10px;
+	font-size:12px;
+	text-transform:capitalize;
+}
+.myprojects{font-weight:600;}
+.navbar-nav>.dropdown>a{padding-top:10px!important;padding-bottom:10px!important;}
+.navbar-right>li>.dropdown-menu>li{margin:8px 0;}

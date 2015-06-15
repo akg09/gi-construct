@@ -21,11 +21,15 @@
 					<li {if $data.func == "about_us"}class="active"{/if}><a href="{if $data.func == "about_us"}#{else}{$SITE_URL}?func=about_us{/if}">About Us</a></li>
 					<li {if $data.func == "support"}class="active"{/if}><a href="{if $data.func == "support"}#{else}{$SITE_URL}?func=support{/if}">Contact Us</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right nmr social hidden-xs select_pages">
+				<ul class="nav navbar-nav navbar-right nmr social hidden-xs">
+					{if !isset($user['user_guid'])}
 					<li  class="active np mr-lg" id="show_modal_login" accesskey="l"><a href="#">Sign Up/Login</a></li>
-					<li><a href="https://plus.google.com/u/0/106213702050772196832/about" target="_blank" class="google"></a><li>
-					<li><a target="_blank" href="https://www.facebook.com/pages/Girish-Constructions-and-Property-Dealers/256269554568614?ref=hl" class="facebook"></a><li>
-					<li><a target="_blank" href="https://twitter.com/girishconstruct?lang=en" class="twitter"></a><li>
+					{else}
+					{include file="gi-user_menu.tpl"}
+					{/if}
+					<li class="social_options"><a href="https://plus.google.com/u/0/106213702050772196832/about" target="_blank" class="google"></a></li>
+					<li class="social_options"><a target="_blank" href="https://www.facebook.com/pages/Girish-Constructions-and-Property-Dealers/256269554568614?ref=hl" class="facebook"></a></li>
+					<li class="social_options"><a target="_blank" href="https://twitter.com/girishconstruct?lang=en" class="twitter"></a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
