@@ -27,8 +27,8 @@
 			if($new_user[0]['password'] == $data['password'])
 			{
 				$_SESSION['gi_user'] = $user = $new_user[0];
-				session_start();
-				header('Location: http://localhost/gi-construct');	
+				$url = SITE_URL.'?func=my_property';
+				header('Location:'.$url);
 			}
 			else
 			{
@@ -46,6 +46,12 @@
 			showThemePage("gi-modal-signup.tpl");
 		}
 		exit;
+	}
+	if($data['func'] == "logout")
+	{
+		$_SESSION['gi_user'] = $user = array();
+		session_destroy();
+		header('Location:'.SITE_URL);
 	}
 	$theme->assign('data',$data);
 	showThemePage("gi-modal-signup.tpl");

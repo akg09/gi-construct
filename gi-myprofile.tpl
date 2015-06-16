@@ -5,9 +5,10 @@
 	<li class=""><a href="#privacy_settings" data-toggle="tab">Privacy</a></li>
 </ul>
 <div class="tab-content">
-	<div class="tab-pane active">
-		
+	<div class="tab-pane active" id="personal_info">
+		{include file="gi-myprofile_form.tpl"}
 	</div>
-	<div class="tab-pane">
+	<div class="tab-pane" id="privacy_settings">
+		{include file="gi-change_password.tpl"}
 	</div>
 </div>
