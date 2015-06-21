@@ -12,12 +12,17 @@
 		$user = getAPIDataJ("get_user",$where);
 		if(is_array($user[0]) && $user[0]['email'] == $data['email'])
 		{
-			return -1;
+			$msg = "This email address is already registered with us.";
+			$theme->assign('msg',$msg);
 		}
-		$new_user = getAPIDataJ("set_user",$data);
-		$user = $new_user[0];
-		$url = SITE_URL.'?func=my_property'; 
-		header("Location:".$url);
+		else
+		{
+			$new_user = getAPIDataJ("set_user",$data);
+			$user = $new_user[0];
+			$_SESSION['gi-user'] = $user;
+			$url = SITE_URL.'?func=my_property'; 
+			header("Location:".$url);
+		}
 	}
 	if($data['func'] == "show_login")
 	{

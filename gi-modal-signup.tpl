@@ -83,6 +83,14 @@ $(document).ready(function(){
 	{
 		if(checkFrmElements('first_name,email,mobile,password,confirm_password','3'))
 		{
+			//check mobile validation
+			if(!checkMobile($('#mobile')))
+			{
+				$('.mobile-group').addClass('has-error');
+				$('.mobile-group').find('p').show();
+				$('.mobile-group').find('input').focus();
+				return false;
+			}
 			//all the fields are filled now check that the passwords are same
 			if($('#password').val() == $('#confirm_password').val())
 			{
