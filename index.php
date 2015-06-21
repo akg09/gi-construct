@@ -28,22 +28,22 @@
 		exit;
 	}
 	$theme->assign('data',$data);
-	echo $theme->fetch("gi-header.tpl");
+	
 	if($data['func'] == "home" && !$action)
 	{
-		echo $theme->fetch("main-page.tpl");
+		showThemePage('main-page.tpl');
 	}
 	if($data['func'] == "services")
 	{
-		echo $theme->fetch("gi-services.tpl");
+		showThemePage('gi-services.tpl');
 	}
 	if($data['func'] == "recent_projects")
 	{
-		echo $theme->fetch("gi-projects.tpl");
+		showThemePage('gi-projects.tpl');
 	}
 	if($data['func'] == "about_us")
 	{
-		echo $theme->fetch("gi-about_us.tpl");
+		showThemePage('gi-about_us.tpl');
 	}
 	if($data['func'] == "support")
 	{
@@ -53,21 +53,20 @@
 			$theme->assign('$data',$data);
 			$msg = $theme->fetch("gi-support_email.tpl");
 			$status = @send_email("GirishConstructions:Thank you for your feedback",$msg,$data['customer_email']);
-			echo $theme->fetch('gi-support_response.tpl');
-			exit;
+			showThemePage('gi-support_response.tpl');
 		}
-		echo $theme->fetch("gi-support.tpl");
+		showThemePage('gi-support.tpl');
 	}
 	if($data['func'] == "contact")
 	{
-		echo $theme->fetch("gi-contact.tpl");
+		showThemePage('gi-contact.tpl');
 	}
+	check_user($user);
 	if($data['func'] == "my_property")
 	{
 		$where = array();
 		$where['user_guid'] = $user['user_guid'];
 		//$property = getAPIDataJ("my_property_list",$where);
-		echo $theme->fetch("gi-my_property_list.tpl");
-	}
-	echo $theme->fetch("gi-footer.tpl");		
+		showThemePage('gi-my_property_list.tpl');
+	}		
 ?>
