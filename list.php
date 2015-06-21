@@ -17,7 +17,7 @@ function check_user($user)
 		//print_r($_SERVER);die;
 		$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
 		$continue = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-		$continue = "&cont=".urlencode($continue);
+		$continue = "cont=".urlencode($continue);
 		
 		header('Location: ' . SITE_URL.'login.php/?func=show_login'.$func.$continue);
 		

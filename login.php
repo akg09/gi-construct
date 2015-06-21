@@ -1,6 +1,10 @@
 <?php
 	include_once 'gi-header.php';
 	$data['show_in_page'] = 1;
+	if(isset($data['cont']))
+	{
+		$_SESSION['cont'] = $data['cont'];
+	}
 	if($data['func'] == "signup")
 	{
 		$where = array();
@@ -11,6 +15,9 @@
 			return -1;
 		}
 		$new_user = getAPIDataJ("set_user",$data);
+		$user = $new_user[0];
+		$url = SITE_URL.'?func=my_property'; 
+		header("Location:".$url);
 	}
 	if($data['func'] == "show_login")
 	{
@@ -28,6 +35,11 @@
 			{
 				$_SESSION['gi_user'] = $user = $new_user[0];
 				$url = SITE_URL.'?func=my_property';
+				if(isset($_SESSION['cont']))
+				{
+					$url = $_SESSION['cont'];
+					unset($_SESSION['cont']);
+				}
 				header('Location:'.$url);
 			}
 			else
