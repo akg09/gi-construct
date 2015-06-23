@@ -65,8 +65,9 @@
 	if($data['func'] == "my_property")
 	{
 		$where = array();
-		$where['user_guid'] = $user['user_guid'];
-		//$property = getAPIDataJ("my_property_list",$where);
+		$where['owner_guid'] = $user['user_guid'];
+		$property = getAPIDataJ("get_property_list",$where);
+		$theme->assign('property',$property);
 		showThemePage('gi-my_property_list.tpl');
 	}		
 ?>
