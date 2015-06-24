@@ -67,6 +67,8 @@
 		$where = array();
 		$where['owner_guid'] = $user['user_guid'];
 		$property = getAPIDataJ("get_property_list",$where);
+		$theme->assign('property_type',$property_type);
+		$theme->assign('property_stype',$property_stype);
 		$theme->assign('property',$property);
 		showThemePage('gi-my_property_list.tpl');
 	}		

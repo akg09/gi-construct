@@ -100,11 +100,14 @@ body
 .npr{padding-right:0}
 
 .inline{display:inline!important}
+.inline-block{display:inline-block!important}
 .block{display:block!important}
 .pointer{cursor:pointer!important}
 .clearfix{float:none!important}
 .relative{position:relative}
 .h{display:none;}
+.middle{vertical-align:middle;}
+.text-top{vertical-align:text-top;}
 .select_pages li.active a, .navbar-right>.dropdown>a
 {
 	background-color: #337ab7!important;
@@ -265,3 +268,20 @@ span12{width:940px}
 .navbar-nav>.dropdown>a{padding-top:10px!important;padding-bottom:10px!important;}
 .navbar-right>li>.dropdown-menu>li{margin:8px 0;}
 .table-condensed{font-size:13px!important;}
+.pr_list
+{
+	border:1px solid #ccc;
+	border-radius:6px;
+	min-height:100px;
+}
+.area_font
+{
+	font-size:19px;
+	color:brown;
+}
+.prop_price
+{
+	font-size:19px;
+	color:#333333;
+	font-weight:bold;
+}
