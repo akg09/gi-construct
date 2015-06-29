@@ -1,3 +1,23 @@
+$(document).ready(function(){
+	/*Global functions needed when adding property*/
+	var type = "";
+	$('.property_type').change(function(){
+		type = $(this).val();
+		if(type == "r" || type == "c"){
+			$('.rooms_type').show();
+			$('.property_stype').hide();
+		}
+		else if(type == "p")
+		{
+			$('.rooms_type,.property_stype').hide();
+		}
+		else
+		{
+			$('.rooms_type').hide();
+			$('.property_stype').show();
+		}
+	});
+});
 function submitSupportForm(){
 	var dfd = new $.Deferred();
 	var f1 = $('#customer_name').val();

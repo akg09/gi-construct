@@ -1,5 +1,5 @@
 <!--File Name:gi-property_design.tpl-->
-<div class="col-md-12 npl pr_list">
+<div class="col-md-12 npl pr_list mb-xl">
 	<div class="col-md-9">
 		<div>
 			<span class="inline-block mr-lg"><h3 class="mt bold">{$prop.project_name}</h3></span>
@@ -10,10 +10,14 @@
 			<label>Locality:</label><span> {$prop.locality}</span>
 			<label>City:</label><span> {$prop.city}</span>		
 		</div>
-		{assign var=t value=$prop.type}
-		{if $prop.type}<div><label>Type of property:</label><span> {$property_type.$t}</span></div>{/if}
-		{assign var=st value=$prop.stype}
-		{if $prop.type}<div><label>Details:</label><span> {$property_stype.$st}</span></div>{/if}
+		{if $prop.type}
+			{assign var=t value=$prop.type}
+			<div><label>Type of property:</label><span> {$property_type.$t}</span></div>
+		{/if}
+		{if $prop.stype}
+			{assign var=st value=$prop.stype}
+			<div><label>Details:</label><span> {$property_stype.$st}</span></div>
+		{/if}
 		<div><label>Owner says:</label><span> {$prop.config}</span></div>
 		{if $user.user_guid == $prop.owner_guid}
 		<div class="mt">	

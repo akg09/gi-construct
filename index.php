@@ -65,8 +65,21 @@
 	if($data['func'] == "my_property")
 	{
 		$where = array();
-		$where['owner_guid'] = $user['user_guid'];
-		$property = getAPIDataJ("get_property_list",$where);
+		if(isset($data['action']) && $data['action'] == "add")
+		{
+			$data['new'] = 1;
+			$data['owner_guid'] = $user['user_guid'];
+			$property = getAPIDataJ("set_property",$data);
+		}
+		elseif(isset($data['action']) && $data['action'] == "delete_property")
+		{
+			
+		}
+		else
+		{
+			$where['owner_guid'] = $user['user_guid'];
+			$property = getAPIDataJ("get_property",$where);
+		}
 		$theme->assign('property_type',$property_type);
 		$theme->assign('property_stype',$property_stype);
 		$theme->assign('property',$property);
